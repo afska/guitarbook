@@ -10,8 +10,11 @@
 				background-color: white;
 				font-family: monospace
 			}
-			h2, h3, h4, h5, h6 {
+			h2, h3, h4, h5, h6, .und {
 				text-decoration: underline;
+			}
+			.bol {
+				font-weight: bold;
 			}
 			.section { }
 		</style>
@@ -30,8 +33,10 @@
 			- Los divs son el contenido: pueden ser otra section o no
 			El js se encarga de armar el índice y poner los links en su lugar
 		-->
+		!!! Esto está siendo toqueteado para mejorarlo. No mire nada, podría hacerle mal.
 		<div class="section" id="ubicacion-notas-diapason">
 			<h1>Ubicación de las notas en el diapasón</h1>
+
 			<div>
 				&nbsp; __&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 3
 				&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp; 6
@@ -47,147 +52,137 @@
 			</div>
 		</div>
 
-		<div class="section" id="sarasa">
-			<h1>sarasa</h1>
-			<div>
-				Re piola con el contenido!
-			</div>
-		</div>
+		<div class="section" id="escalas">
+			<h1>Escalas</h1>
 
-		<div class="section" id="cosa">
-			<h1>Compuesta</h1>
-			<div class="section" id="subcosa">
-				<h1>Subcosa</h1>
+			<div class="section" id="escalas-mayores-y-menores">
+				<h1>Escala mayor de C y menor de A</h1>
+
 				<div>
-					Re piola con la cosa!
+					<div class="und">Escala mayor de C:</div>
+					<div class="bol">
+						1°&nbsp; 2°&nbsp; 3°&nbsp; 4°&nbsp; 5°&nbsp; 6°&nbsp; 7°&nbsp; 8°
+					</div>
+					<div>
+						C&nbsp;&nbsp; D&nbsp;&nbsp; E&nbsp;&nbsp; F&nbsp;&nbsp; G&nbsp;&nbsp; A
+						&nbsp;&nbsp; B&nbsp;&nbsp; C
+					</div>
+					<div>
+						<span class="bol">
+							&nbsp; 1&nbsp;&nbsp; 1&nbsp;&nbsp; ½&nbsp;&nbsp; 1&nbsp;&nbsp; 1
+							&nbsp;&nbsp; 1&nbsp;&nbsp; ½
+						</span>
+						<span>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3-7)
+						</span>
+					</div>
+
+					<br>
+
+					<div class="und">Escala menor de A:</div>
+					<div class="bol">
+						1°&nbsp; 2°&nbsp; 3°&nbsp; 4°&nbsp; 5°&nbsp; 6°&nbsp; 7°&nbsp; 8°
+					</div>
+					<div>
+						A&nbsp;&nbsp; B&nbsp;&nbsp; C&nbsp;&nbsp; D&nbsp;&nbsp; E&nbsp;&nbsp; F
+						&nbsp;&nbsp; G&nbsp;&nbsp; A
+					</div>
+					<div>
+						<span class="bol">
+							&nbsp; 1&nbsp;&nbsp; ½&nbsp;&nbsp; 1&nbsp;&nbsp; 1&nbsp;&nbsp; ½
+							&nbsp;&nbsp; 1&nbsp;&nbsp; 1
+						</span>
+						<span>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2-5)
+						</span>
+					</div>
+
+					<br>
+
+					<span>-&gt; </span><span class="und">Relación:</span>
+					<div>
+						- En el 6° grado de la escala de C empieza la escala menor de A (A es el relativo menor de C).<br>
+						- En el 3° grado de la escala de A- empieza la escala mayor de C (C es el relativo mayor de A).<br>
+						Esta relación tiene que ver con los modos griegos, la escala menor natural es el 6° modo (eólico).
+					</div>
 				</div>
 			</div>
-			<div class="section" id="otra-subcosa">
-				<h1>Otra subcosa</h1>
-				<div class="section" id="subsubcosa">
-					<h1>Subsubcosa de otra subcosa</h1>
-					<div>Internet</div>
-					<div>Modem internet</div>
+
+			<div class="section" id="escalas-pentatonicas-y-de-blues">
+				<h1>Escalas pentatónicas y de Blues</h1>
+
+				<div>
+					Es una escala de 5 sonidos:<br>
+					- Si a una escala mayor le quitamos el 4° y 7° grado, nos queda una escala pentatónica mayor<br>
+					- Si a una escala menor natural le quitamos el 2° y 6° grado, nos queda una escala pentatónica menor<br>
+					<br>
+					La escala de Blues es una escala pentatónica a la que se le agrega la <span class="bol">blue note</span> (3° b o # -según si es menor o	mayor-).
+				</div>
+			</div>
+
+			<div class="section" id="modos-griegos">
+				<h1>Modos griegos</h1>
+
+				<div>
+					De la escala mayor, surgen más escalas al desplazar el orden de las notas. Estas escalas tienen las mismas notas que la escala mayor. Se llaman:<br>
+					1) Jónico<br>
+					2) Dórico<br>
+					3) Frigio<br>
+					4) Lidio<br>
+					5) Mixolidio<br>
+					6) Eólico<br>
+					7) Locrio<br>
+					... y el orden de las notas surge de arrancar la escala mayor desde un determinado grado de la escala.<br>
+					<br>
+					Por ejemplo: la escala de C es...<br>
+					<br>
+					<span class="bol">1°&nbsp; 2°&nbsp;&nbsp; 3°&nbsp;&nbsp; 4°&nbsp; 5°&nbsp; 6°&nbsp; 7°</span><br>
+					C&nbsp;&nbsp; D&nbsp;&nbsp;&nbsp; E&nbsp;&nbsp;&nbsp; F&nbsp;&nbsp;
+					G&nbsp;&nbsp; A&nbsp;&nbsp; B<br>
+					<br>
+					...entonces el modo frigio es igual pero empezando del 3° grado:<br>
+					<br>
+					<span class="bol">1°&nbsp; 2°&nbsp; 3°&nbsp; 4°&nbsp; 5°&nbsp; 6°&nbsp; 7°</span><br>
+					E&nbsp;&nbsp; F&nbsp;&nbsp; G&nbsp;&nbsp; A&nbsp;&nbsp; B&nbsp;&nbsp;
+					C&nbsp;&nbsp; D<br>
+					<br>
+					Parece un cambio muy simple pero tocar la escala frigia da un sonido totalmente diferente al que se da tocando la escala mayor o “modo jónico”.	Con esta nomenclatura, la escala menor natural (que partía del 6° grado) sería el “modo eólico”.<br>
+					<br>
+					Con esto separamos la escala mayor en 7 escalas. La ventaja es poder hacer una canción en -por ejemplo- la tonalidad mixolidia, o el modo que sea.<br>
+					<br>
+					<span class="und">Improvisando:</span><br>
+					Podés usar el modo correspondiente a cada acorde en el momento que corresponda. Ejemplo: Base en C, Dm, G. Improvisarías en los modos jónico, dórico y mixolidio respectivamente.<br>
+					<br>
+					<span class="und">Mayores y menores:</span><br>
+					Modos mayores: Jónico, Lidio, Mixolidio<br>
+					Modos menores: Dórico, Frigio, Eólico, Locrio<br>
+					<br>
+					<span class="und">Notas características de cada	modo:</span><br>
+					Cada uno tiene una nota característica que lo diferencia de una escala mayor/menor común y corriente...<br>
+					<br>
+					Dórico: 6° aumentada<br>
+					Frigio: 2° bemol<br>
+					Lidio: 4° aumentada<br>
+					Mixolidio: 7° menor<br>
+					Locrio: 2° y 5° bemol<br>
+					<br>
+					Conviene resaltar esas notas al tocar para darle una sonoridad acorde al
+					modo que está sonando.<br>
+					<br>
+					<span class="und">Los modos están en la armonía:</span><br>
+					Si vos tocás sobre un acorde G la escala jónica de C, va a sonar mixolidio igual. En ese caso al cerrar, habría que terminar el solo en G. Si estás	improvisando en C mayor sobre un acorde C, y después pasás a un acorde Dm, primero va a sonar jónico y después dórico: La gracia está en plantarte en un modo determinado, (el dórico, por ejemplo) con un acorde Dm sonando de	fondo, e improvisar con la escala dórica de D.<br>
+					<br>
+					<span class="und">Uso de los modos a nivel melódico:</span> <br>
+					<br>
+					Maj7&nbsp; =&gt; Lidio o Jónico<br>
+					m7&nbsp;&nbsp;&nbsp; =&gt; Dórico o Eólico<br>
+					7&nbsp;&nbsp;&nbsp;&nbsp; =&gt; Mixolidio (cuando resuelve a un acorde mayor)<br>
+					7&nbsp;&nbsp;&nbsp;&nbsp; =&gt; Frigio (cuando resuelve a un acorde menor)<br>
+					m7b5&nbsp; =&gt; Locrio<br>
 				</div>
 			</div>
 		</div>
 
-		<!--
-
-      <br>
-    <h2><strong style="text-decoration: underline;"><a id="escalas" name="escalas">Escalas...</a></strong></h2>
-    <h3><strong style="text-decoration: underline;"><a id="escalas-de-c-y-am" name="escalas-de-c-y-am">Escalas
-          &gt; Escalas mayores y menores:</a></strong></h3>
-    <span style="text-decoration: underline;">Escala mayor de C:</span><br>
-    <span><strong>1°&nbsp; 2°&nbsp; 3°&nbsp; 4°&nbsp; 5°&nbsp; 6°&nbsp; 7°&nbsp;
-        8°</strong><br>
-      C&nbsp;&nbsp; D&nbsp;&nbsp; E&nbsp;&nbsp; F&nbsp;&nbsp; G&nbsp;&nbsp;
-      A&nbsp;&nbsp; B&nbsp;&nbsp; C<br>
-      <strong>&nbsp; 1&nbsp;&nbsp; 1&nbsp;&nbsp; ½&nbsp;&nbsp; 1&nbsp;&nbsp;
-        1&nbsp;&nbsp; 1&nbsp;&nbsp;
-        ½&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> (3-7)</span><br>
-    <br>
-    <span style="text-decoration: underline;">Escala menor de A:</span><br>
-    <span><strong>1°&nbsp; 2°&nbsp; 3°&nbsp; 4°&nbsp; 5°&nbsp; 6°&nbsp; 7°&nbsp;
-        8°</strong><br>
-      A&nbsp;&nbsp; B&nbsp;&nbsp; C&nbsp;&nbsp; D&nbsp;&nbsp; E&nbsp;&nbsp;
-      F&nbsp;&nbsp; G&nbsp;&nbsp; A<br>
-      <strong>&nbsp; 1&nbsp;&nbsp; ½&nbsp;&nbsp; 1&nbsp;&nbsp; 1&nbsp;&nbsp;
-        ½&nbsp;&nbsp; 1&nbsp;&nbsp; 1</strong><strong>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> (2-5)</span><br>
-    <br>
-    -&gt; <span><span style="text-decoration: underline;">Relación:</span><br>
-    </span> <span>[!] En el 6° grado de la escala de C empieza la escala menor
-      de A (A es el relativo menor de C).<br>
-      [!] En el 3° grado de la escala de A- empieza la escala mayor de C (C es
-      el relativo mayor de A).<br>
-    </span> <span>Esta relación tiene que ver con los modos griegos, la escala
-      menor natural es el 6° modo (eólico).</span>
-    <h3><strong style="text-decoration: underline;"><a id="escalas-pentatonicas-y-de-blues"
-          name="escalas-pentatonicas-y-de-blues">Escalas &gt; Escalas
-          pentatónicas y de blues:</a></strong></h3>
-    Es una escala de 5 sonidos:<br>
-    - Si a una escala mayor le quitamos el 4° y 7° grado, nos queda una escala
-    pentatónica mayor<br>
-    - Si a una escala menor natural le quitamos el 2° y 6° grado, nos queda una
-    escala pentatónica menor<br>
-    <br>
-    La escala de Blues es una escala pentatónica a la que se le agrega la <span
-      style="font-weight: bold;">blue note</span> (3° b o # -según si es menor o
-    mayor-).<br>
-    <h3><strong style="text-decoration: underline;"><a id="modos-griegos" name="modos-griegos">Escalas
-          &gt; Modos griegos:</a></strong></h3>
-    De la escala mayor, surgen más escalas al desplazar el orden de las notas.
-    Estas escalas tienen las mismas notas que la escala mayor. Se llaman:<br>
-    1) Jónico<br>
-    2) Dórico<br>
-    3) Frigio<br>
-    4) Lidio<br>
-    5) Mixolidio<br>
-    6) Eólico<br>
-    7) Locrio<br>
-    … y el orden de las notas surge de arrancar la escala mayor desde un
-    determinado grado de la escala.<br>
-    <br>
-    Por ejemplo: la escala de C es...<br>
-    <br>
-    <strong>1°&nbsp; 2°&nbsp;&nbsp; 3°&nbsp;&nbsp; 4°&nbsp; 5°&nbsp; 6°&nbsp; 7°</strong><br>
-    C&nbsp;&nbsp; D&nbsp;&nbsp;&nbsp; E&nbsp;&nbsp;&nbsp; F&nbsp;&nbsp;
-    G&nbsp;&nbsp; A&nbsp;&nbsp; B<br>
-    <br>
-    ...entonces el modo frigio es igual pero empezando del 3° grado:<br>
-    <br>
-    <strong>1°&nbsp; 2°&nbsp; 3°&nbsp; 4°&nbsp; 5°&nbsp; 6°&nbsp; 7°</strong><br>
-    E&nbsp;&nbsp; F&nbsp;&nbsp; G&nbsp;&nbsp; A&nbsp;&nbsp; B&nbsp;&nbsp;
-    C&nbsp;&nbsp; D<br>
-    <br>
-    Parece un cambio muy simple pero tocar la escala frigia da un sonido
-    totalmente diferente al que se da tocando la escala mayor o “modo jónico”.
-    Con esta nomenclatura, la escala menor natural (que partía del 6° grado)
-    sería el “modo eólico”.<br>
-    <br>
-    Con esto separamos la escala mayor en 7 escalas. La ventaja es poder hacer
-    una canción en -por ejemplo- la tonalidad mixolidia, o el modo que sea.<br>
-    <br>
-    <span style="text-decoration: underline;">Improvisando:</span><br>
-    Podés usar el modo correspondiente a cada acorde en el momento que
-    corresponda. Ejemplo: Base en C, Dm, G. Improvisarías en los modos jónico,
-    dórico y mixolidio respectivamente.<br>
-    <br>
-    <span style="text-decoration: underline;">Mayores y menores</span>:<br>
-    Modos mayores: Jónico, Lidio, Mixolidio<br>
-    Modos menores: Dórico, Frigio, Eólico, Locrio<br>
-    <br>
-    <span style="text-decoration: underline;">Notas características de cada
-      modo:<br>
-    </span> Cada uno tiene una nota característica que lo diferencia de una
-    escala mayor/menor común y corriente...<br>
-    <br>
-    Dórico: 6° aumentada<br>
-    Frigio: 2° bemol<br>
-    Lidio: 4° aumentada<br>
-    Mixolidio: 7° menor<br>
-    Locrio: 2° y 5° bemol<br>
-    <br>
-    Conviene resaltar esas notas al tocar para darle una sonoridad acorde al
-    modo que está sonando.<br>
-    <br>
-    <span style="text-decoration: underline;">Los modos están en la armonía:</span><br>
-    Si vos tocás sobre un acorde G la escala jónica de C, va a sonar mixolidio
-    igual. En ese caso al cerrar, habría que terminar el solo en G. Si estás
-    improvisando en C mayor sobre un acorde C, y después pasás a un acorde Dm,
-    primero va a sonar jónico y después dórico: La gracia está en plantarte en
-    un modo determinado, (el dórico, por ejemplo) con un acorde Dm sonando de
-    fondo, e improvisar con la escala dórica de D.<br>
-    <br>
-    <span style="text-decoration: underline;">Uso de los modos a nivel melódico:<br>
-      <br>
-    </span> Maj7&nbsp; =&gt; Lidio o Jónico<br>
-    m7&nbsp;&nbsp;&nbsp; =&gt; Dórico o Eólico<br>
-    7&nbsp;&nbsp;&nbsp;&nbsp; =&gt; Mixolidio (cuando resuelve a un acorde
-    mayor)<br>
-    7&nbsp;&nbsp;&nbsp;&nbsp; =&gt; Frigio (cuando resuelve a un acorde menor)<br>
-    m7b5&nbsp; =&gt; Locrio<br>
     <h3><strong style="text-decoration: underline;"><a id="escala-menor-armonica"
           name="escala-menor-armonica">Escalas &gt; Escala menor armónica:</a></strong></h3>
     Es igual a la escala menor natural pero con el 7° grado aumentado.<br>
@@ -225,6 +220,10 @@
     <span style="text-decoration: underline;">En términos de tensión:</span>
     Dominante &gt; Subdominante &gt; Tónica.<br>
     <span style="text-decoration: underline;">Acordes 7:</span> Son dominantes.<br>
+
+		<!--
+
+
     <h3><strong style="text-decoration: underline;"><a id="escalas-digitaciones"
           name="escalas-digitaciones">Escalas &gt; Digitaciones...</a></strong></h3>
     <h4><strong style="text-decoration: underline;"><a id="escala-mayor-de-c" name="escala-mayor-de-c">Escalas
@@ -604,9 +603,9 @@
 				var processSection = function(section, $parentIndex) {
 					$parentIndex = $parentIndex || $index //ul del índice para raíces
 					var $parents = $(section).parents(selector);
+					var $childs = $(section).children("div" + selector);
 					var level = 2 + $parents.length; //h2 para raíces
 
-					if (level == 4) debugger;
 					if (level > 6) console.log("ERROR: Hay secciones con demasiados hijos.");
 
 					//Obtener datos de la sección:
@@ -615,7 +614,7 @@
 					var $content = $(section).children("div");
 
 					//Chequear errores:
-					if (!$title.unique() || !$content.exists()) {
+					if (!id || !$title.unique() || !$content.exists()) {
 						console.log("ERROR: La sección con id \"" + id + "\" está mal armada.");
 						return;
 					}
@@ -624,9 +623,10 @@
 					var prefix = $parents.exists()
 						? $parents.first().children().first().text() + " > "
 						: ""; //raices -> hacia -> hojas
+					var postfix = $childs.exists() ? "..." : ":";
 					$title.remove();
 					$(section).prepend(
-						$("<h" + level + "/>", { text: prefix + $title.text() })
+						$("<h" + level + "/>", { text: prefix + $title.text() + postfix })
 					);
 
 					//Agregar nodo al índice:
@@ -638,11 +638,11 @@
 					$parentIndex.append($indexItem);
 
 					//Repetir para los hijos:
-					var childs = $(section).children("div" + selector);
-					if (childs.exists()) {
+					
+					if ($childs.exists()) {
 						var $childsIndex = $("<ul/>");
 						$indexItem.append($("<div/>").append($childsIndex));
-						childs.forEach(function(it) { processSection(it, $childsIndex); });
+						$childs.forEach(function(it) { processSection(it, $childsIndex); });
 					}
 				};
 
