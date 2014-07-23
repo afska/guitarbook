@@ -1,116 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <!-- WARNING: No, no querés mirar el HTML. Lo hice con un editor WYSIWYG, que lo genera de forma espantosa. Yo te avisé. -->
-  <head>
-    <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <title>Guitar</title>
-    <style type="text/css">
-  body {
-		background-color: white;
-		font-family: monospace
-	  }
-	</style>
-  </head>
-  <body>
-    <script type="text/javascript">
-      window.onkeypress = function(key) { if (key.charCode = "w".charCodeAt()) scrollTo(0, 0); };
-    </script>
-    <h1>Guitarra</h1>
-    <h2><span style="text-decoration: underline;">Índice</span></h2>
-    <span>- <a href="#ubicacion-de-notas-en-el-diapason">Ubicación de notas en
-        el diapasón</a></span><br>
-    <span>- <a href="#escalas">Escalas...</a><br>
-      &nbsp;&nbsp; - <a href="#escalas-de-c-y-am">Escalas mayores y menores</a><br>
-      &nbsp;&nbsp; - <a href="#escalas-pentatonicas-y-de-blues">Escalas
-        pentatónicas y de blues</a></span><br>
-    <span><span>&nbsp;&nbsp; - <a href="#modos-griegos">Modos griegos</a><br>
-      </span> &nbsp;&nbsp; - <a href="#escala-menor-armonica">Escala menor
-        armónica</a><br>
-      &nbsp;&nbsp; - <a href="#escala-menor-melodica">Escala menor melódica</a><br>
-      &nbsp;&nbsp; - <a href="#escala-disminuida">Escala disminuída</a><br>
-      &nbsp;&nbsp; - <a href="#escala-aumentada">Escala aumentada</a><br>
-      &nbsp;&nbsp; - <a href="#escalas-grados">Grados</a><br>
-      &nbsp;&nbsp; - <a href="#escalas-digitaciones">Digitaciones...</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#escala-mayor-de-c">Escala
-        mayor de C</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#escala-de-blues-menor-de-a">Escala
-        de blues menor de A</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#escala-de-blues-mayor-de-a">Escala
-        de blues mayor de A</a></span><br>
-    <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#digitacion-modos-en-a">Modos
-        griegos en A</a></span><br>
-    <span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#modo-frigio-dominante-en-e">Modo
-          frigio dominante en E</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#escala-menor-melodica-de-c">Escala
-          menor melódica de C</a></span><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#escala-disminuida-a">Escala
-        disminuída de A</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#escala-aumentada-a">Escala
-        aumentada de A</a><br>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<title>Guitar</title>
+
+		<!-- Estilos -->
+		<style type="text/css">
+			body {
+				background-color: white;
+				font-family: monospace
+			}
+			h2, h3, h4, h5, h6 {
+				text-decoration: underline;
+			}
+			.section { }
+		</style>
+	</head>
+
+	<body>
+		<h1>Guitarra</h1>
+
+		<h2>Índice</h2>
+		<ul id="index"></ul>
+
+		<!-- Contenido -->
+		<!--
+			Una section consta de un h1 y [1..n] div's:
+			- El h1 es el título
+			- Los divs son el contenido: pueden ser otra section o no
+			El js se encarga de armar el índice y poner los links en su lugar
+		-->
+		<div class="section" id="ubicacion-notas-diapason">
+			<h1>Ubicación de las notas en el diapasón</h1>
+			<div>
+				&nbsp; __&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 3
+				&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp; 6
+				&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp; 9
+				&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; 11&nbsp;&nbsp;&nbsp; 12<br>
+				&nbsp;&nbsp;&nbsp; \<br>&nbsp; e&nbsp;
+				||--F--|-----|--G--|-----|--A--|-----|--B--|--C--|-----|--D--|-----|--E--|<br>&nbsp; B&nbsp;
+				||--C--|-----|--D--|-----|--E--|--F--|-----|--G--|-----|--A--|-----|--B--|<br>&nbsp; G&nbsp;
+				||-----|--A--|-----|--B--|--C--|-----|--D--|-----|--E--|--F--|-----|--G--|<br>&nbsp; D&nbsp;
+				||-----|--E--|--F--|-----|--G--|-----|--A--|-----|--B--|--C--|-----|--D--|<br>&nbsp; A&nbsp;
+				||-----|--B--|--C--|-----|--D--|-----|--E--|--F--|-----|--G--|-----|--A--|<br>&nbsp; E&nbsp;
+				||--F--|-----|--G--|-----|--A--|-----|--B--|--C--|-----|--D--|-----|--E--|<br>&nbsp; __/
+			</div>
+		</div>
+
+		<div class="section" id="sarasa">
+			<h1>sarasa</h1>
+			<div>
+				Re piola con el contenido!
+			</div>
+		</div>
+
+		<div class="section" id="cosa">
+			<h1>Compuesta</h1>
+			<div class="section" id="subcosa">
+				<h1>Subcosa</h1>
+				<div>
+					Re piola con la cosa!
+				</div>
+			</div>
+			<div class="section" id="otra-subcosa">
+				<h1>Otra subcosa</h1>
+				<div class="section" id="subsubcosa">
+					<h1>Subsubcosa de otra subcosa</h1>
+					<div>Internet</div>
+					<div>Modem internet</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+
       <br>
-      - <a href="#arpegios">Arpegios...</a><br>
-      &nbsp;&nbsp; - <a href="#arpegio-de-c">Arpegio de C</a><br>
-      &nbsp;&nbsp; - <a href="#arpegio-de-c-menor">Arpegio de Cm</a><br>
-      &nbsp;&nbsp; - <a href="#arpegios-septima">Arpegios de Cmaj7, C7, Cm7 y
-        C∅</a><br>
-      &nbsp;&nbsp; - <a href="#arpegio-disminuido-a">Arpegio disminuído de A</a><br>
-      &nbsp;&nbsp; - <a href="#arpegio-aumentado-a">Arpegio aumentado de A</a><br>
-      &nbsp;&nbsp; - <a href="#arpegios-con-tapping-1">Arpegios con tapping (1)</a><br>
-      &nbsp;&nbsp; - <a href="#arpegios-con-tapping-2">Arpegios con tapping (2)</a><br>
-      <br>
-      - <a href="#acordes">Acordes...</a></span><span><br>
-      &nbsp;&nbsp; - <a href="#acordes-tipos">Tipos</a></span><br>
-    &nbsp;<span>&nbsp; - <a href="#acordes-nomenclatura">Nomenclatura</a></span><br>
-    &nbsp;<span>&nbsp; - <a href="#acordes-formacion">Formación...</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#acordes-formacion-triadas">Tríadas</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#acordes-formacion-cuatriadas">Cuatríadas</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#formacion-de-em7">Ejemplo (de
-        Em7)</a></span><br>
-    &nbsp;<span>&nbsp; - <a href="#acordes-dibujos-de-acordes">Dibujos de
-        acordes...</a></span><span><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#acordes-basicos">Acordes
-        básicos</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#acordes-7ma-abreviados">Acordes
-        7ma abreviados</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#acordes-inversiones-7ma">Inversiones
-        7ma</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <a href="#acordes-grafico-general">Gráfico
-        general</a></span><br>
-    <br>
-    - <a href="#composicion">Composición...</a><br>
-    &nbsp;&nbsp; - <a href="#composicion-tonalidades">Tonalidades</a><br>
-    &nbsp;&nbsp; - <a href="#composicion-armonia">Armonía de escalas</a><br>
-    &nbsp;&nbsp; - <a href="#composicion-tension">Tensión en los acordes</a><br>
-    &nbsp;&nbsp; - Tips<br>
-    <br>
-    - Técnica<br>
-    &nbsp;&nbsp; - Tips<br>
-    <br>
-    - Improvisación<br>
-    &nbsp;&nbsp; - Tips<br>
-    <br>
-    <h2><strong style="text-decoration: underline;"><a id="ubicacion-de-notas-en-el-diapason">Ubicación de notas en el diapasón:</a></strong></h2>
-    <span>&nbsp; __&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;
-      2&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;
-      4&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp;
-      6&nbsp;&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp;
-      8&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp;
-      11&nbsp;&nbsp;&nbsp; 12<br>
-      &nbsp;&nbsp;&nbsp; \<br>
-      &nbsp; e&nbsp;
-      ||--F--|-----|--G--|-----|--A--|-----|--B--|--C--|-----|--D--|-----|--E--|<br>
-      &nbsp; B&nbsp;
-      ||--C--|-----|--D--|-----|--E--|--F--|-----|--G--|-----|--A--|-----|--B--|<br>
-      &nbsp; G&nbsp;
-      ||-----|--A--|-----|--B--|--C--|-----|--D--|-----|--E--|--F--|-----|--G--|<br>
-      &nbsp; D&nbsp;
-      ||-----|--E--|--F--|-----|--G--|-----|--A--|-----|--B--|--C--|-----|--D--|<br>
-      &nbsp; A&nbsp;
-      ||-----|--B--|--C--|-----|--D--|-----|--E--|--F--|-----|--G--|-----|--A--|<br>
-      &nbsp; E&nbsp;
-      ||--F--|-----|--G--|-----|--A--|-----|--B--|--C--|-----|--D--|-----|--E--|<br>
-      &nbsp; __/</span> <span><br>
-    </span><br>
     <h2><strong style="text-decoration: underline;"><a id="escalas" name="escalas">Escalas...</a></strong></h2>
     <h3><strong style="text-decoration: underline;"><a id="escalas-de-c-y-am" name="escalas-de-c-y-am">Escalas
           &gt; Escalas mayores y menores:</a></strong></h3>
@@ -621,6 +585,85 @@
     (“tónica”) el que menos.<br>
     Ej: Probar la progresión de acordes: C, F, Dm, G =&gt; Si no la terminás en
     C, da la sensación de que te vas a morir.
-    
-  </body>
+    -->
+
+    	<!-- Scripts -->
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript">
+			var setHelpers = function() {
+				//Helpers de jQuery:
+				$.fn.exists = function() { return this.length != 0; };
+				$.fn.unique = function() { return this.length == 1; };
+				$.fn.forEach = function(f) { return this.each(function(_, it) { f(it); }); };
+			};
+
+			var orderSectionsAndIndex = function() {
+				var selector = ".section";
+				var $index = $("#index");
+
+				var processSection = function(section, $parentIndex) {
+					$parentIndex = $parentIndex || $index //ul del índice para raíces
+					var $parents = $(section).parents(selector);
+					var level = 2 + $parents.length; //h2 para raíces
+
+					if (level == 4) debugger;
+					if (level > 6) console.log("ERROR: Hay secciones con demasiados hijos.");
+
+					//Obtener datos de la sección:
+					var id = $(section).attr("id");
+					var $title = $(section).children("h1");
+					var $content = $(section).children("div");
+
+					//Chequear errores:
+					if (!$title.unique() || !$content.exists()) {
+						console.log("ERROR: La sección con id \"" + id + "\" está mal armada.");
+						return;
+					}
+
+					//Setear título para el título:
+					var prefix = $parents.exists()
+						? $parents.first().children().first().text() + " > "
+						: ""; //raices -> hacia -> hojas
+					$title.remove();
+					$(section).prepend(
+						$("<h" + level + "/>", { text: prefix + $title.text() })
+					);
+
+					//Agregar nodo al índice:
+					var $indexItem = $("<li/>").append(
+						$("<div/>").append(
+							$("<a/>", { href: "#" + id, text: $title.text() })
+						)
+					);
+					$parentIndex.append($indexItem);
+
+					//Repetir para los hijos:
+					var childs = $(section).children("div" + selector);
+					if (childs.exists()) {
+						var $childsIndex = $("<ul/>");
+						$indexItem.append($("<div/>").append($childsIndex));
+						childs.forEach(function(it) { processSection(it, $childsIndex); });
+					}
+				};
+
+				var $roots = $(selector).filter(function(_, it) {
+					return !$(it).parents(selector).exists();
+				});
+				$roots.forEach(processSection);
+			};
+
+			var setScrollFatality = function() {
+				//"w" para scrollear arriba:
+				$(window).keypress(function(key) {
+					var pressedChar = key.charCode;
+					var w = "w".charCodeAt();
+					if (pressedChar == w) scrollTo(0, 0);
+				});
+			};
+
+			setHelpers();
+			orderSectionsAndIndex();
+			setScrollFatality();
+		</script>
+	</body>
 </html>
