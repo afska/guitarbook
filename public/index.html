@@ -17,6 +17,9 @@
 			.bol {
 				font-weight: bold;
 			}
+			.ita {
+				font-style: italic;
+			}
 			.pick {
 				width: 12px;
 				height: 12px;
@@ -24,7 +27,6 @@
 
 			.section { }
 			.guitarpro { }
-
 		</style>
 	</head>
 
@@ -125,7 +127,23 @@
 					- Si a una escala mayor le sacamos el 4° y 7° grado, nos queda una escala pentatónica mayor<br>
 					- Si a una escala menor natural le sacamos el 2° y 6° grado, nos queda una escala pentatónica menor<br>
 					<br>
-					La escala de Blues es una escala pentatónica a la que se le agrega la <span class="bol">blue note</span> (3° b o # -según si es menor o	mayor-).
+					La escala de Blues es una escala pentatónica a la que se le agrega la <span class="bol">blue note</span> (3° o 5° bemol -dependiendo si es mayor o menor-).
+				</div>
+
+				<div class="section" id="escala-pentatonica-dominante">
+					<h1>Escala pentatónica dominante</h1>
+
+					<div>
+						Es la escala pentatónica menor, pero con la 3° mayor. Proviene del modo mixolidio. Le podemos agregar la blue note si queremos.
+					</div>
+				</div>
+
+				<div class="section" id="escala-pentatonica-disminuida">
+					<h1>Escala pentatónica disminuída</h1>
+
+					<div>
+						Es la escala pentatónica menor, pero con la blue note (5° bemol) y sin la 5°. Puede sonar sobre un acorde ∅.
+					</div>
 				</div>
 			</div>
 
@@ -288,6 +306,30 @@
 						<img src="images/escala-blues-menor-a-posicion-4.png"><br>
 						<img src="images/escala-blues-menor-a-posicion-5.png">
 					</div>
+
+					<div class="section guitarpro" id="digitacion-escala-pentatonica-dominante-a">
+						<h1>Escala pentatónica dominante de A</h1>
+
+						<div>
+							<img src="images/escala-pentatonica-dominante-a-posicion-1.png"><br>
+							<img src="images/escala-pentatonica-dominante-a-posicion-2.png"><br>
+							<img src="images/escala-pentatonica-dominante-a-posicion-3.png"><br>
+							<img src="images/escala-pentatonica-dominante-a-posicion-4.png"><br>
+							<img src="images/escala-pentatonica-dominante-a-posicion-5.png"><br>
+						</div>
+					</div>
+
+					<div class="section guitarpro" id="digitacion-escala-pentatonica-disminuida-a">
+						<h1>Escala pentatónica disminuída de A</h1>
+
+						<div>
+							<img src="images/escala-pentatonica-disminuida-a-posicion-1.png"><br>
+							<img src="images/escala-pentatonica-disminuida-a-posicion-2.png"><br>
+							<img src="images/escala-pentatonica-disminuida-a-posicion-3.png"><br>
+							<img src="images/escala-pentatonica-disminuida-a-posicion-4.png"><br>
+							<img src="images/escala-pentatonica-disminuida-a-posicion-5.png"><br>
+						</div>
+					</div>
 				</div>
 
 				<div class="section guitarpro" id="digitacion-modos-griegos-a">
@@ -419,7 +461,8 @@
 					<span class="und">Cuatríadas:</span> 1°, 3°, 5° y 7°.<br>
 					<br>
 					<span class="und">Acordes extendidos:</span><br>
-					Pueden agregarse los grados 9°, 11° y 13°.<br>
+					Pueden agregarse los grados 9°, 11° y 13°, que son equivalentes a los grados 2°, 4° y 6°. Es decir, después del 7° empiezan a repetirse.<br>
+
 					<br>
 					<span class="und">Inversiones:</span><br>
 					- 1° inversión: con la 3° en el bajo<br>
@@ -513,6 +556,24 @@
 						Sabemos que el 3° grado de la escala mayor de C es un E. Para formar el acorde seguimos el proceso anterior, nos queda:<br>
 						<br>
 						<img src="images/formacion-em7.png">
+					</div>
+				</div>
+
+				<div class="section" id="formacion-extensiones">
+					<h1>Extensiones</h1>
+
+					<div>
+						Las notas de extensión son 9°, 11° y 13°. Las novenas pueden ser:<br>
+						<span class="bol">9° mayor (9M):</span> 1 tono ↑<br>
+						<span class="bol">9° bemol (9b):</span> ½ tono ↑<br>
+						<br>
+						- La 9° de una nota es la 2°.<br>
+						- La 11° es la 9° de la 3°.<br>
+						- La 13° es la 9° de la 5°.<br>
+						La regla es que si la 9° es mayor se puede usar, y si no hay que tener cuidado.<br>
+						<br>
+						<span class="und">Por ejemplo:</span> La novena de un acorde E en la escala mayor de C es su segunda, o sea, F. Hay medio tono de distancia, entonces es 9° bemol => no se puede usar. Su oncena es mayor (porque de G a A hay 1 tono), y su trecena es bemol (porque de B a C hay ½ tono) => solo podemos agregar la 11°.
+
 					</div>
 				</div>
 			</div>
@@ -630,7 +691,7 @@
 					Los acordes que pueden sonar sobre una escala surgen de las reglas de formación de acordes.<br>
 					Como la armonía de una escala se puede transportar a cualquier tónica, en este cuadro se resumen las de la escala mayor, menor, y menor armónica:<br>
 					<br>
-					<table style="width: 500px; height: 85px;" border="1">
+					<table style="width: 850px; height: 85px;" border="1">
 						<tbody>
 							<tr>
 								<td class="bol" style="width: 130px">Esc/Gra</td>
@@ -644,23 +705,23 @@
 							</tr>
 							<tr>
 								<td>Mayor</td>
-								<td>maj7</td>
-								<td>m7</td>
-								<td>m7</td>
-								<td>maj7</td>
-								<td>7</td>
-								<td>m7</td>
-								<td>∅</td>
+								<td>maj7 <span class="ita">(9-13)</span></td>
+								<td>m7 <span class="ita">(9-11-13)</span></td>
+								<td>m7 <span class="ita">(11)</span></td>
+								<td>maj7 <span class="ita">(9-11-13)</span></td>
+								<td>7 <span class="ita">(9-13)</span></td>
+								<td>m7 <span class="ita">(9-13)</span></td>
+								<td>∅ <span class="ita">(11-13)</span></td>
 							</tr>
 							<tr>
 								<td>Menor</td>
-								<td>m7</td>
-								<td>∅</td>
-								<td>maj7</td>
-								<td>m7</td>
-								<td>m7</td>
-								<td>maj7</td>
-								<td>7</td>
+								<td>m7 <span class="ita">(9-13)</span></td>
+								<td>∅ <span class="ita">(11-13)</span></td>
+								<td>maj7 <span class="ita">(9-13)</span></td>
+								<td>m7 <span class="ita">(9-11-13)</span></td>
+								<td>m7 <span class="ita">(11)</span></td>
+								<td>maj7 <span class="ita">(9-11-13)</span></td>
+								<td>7 <span class="ita">(9-13)</span></td>
 							</tr>
 							<tr>
 								<td>Menor armónica</td>
