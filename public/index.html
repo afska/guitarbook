@@ -8,15 +8,23 @@
 		<style type="text/css">
 			body {
 				background-color: white;
-				font-family: monospace
+				font-family: monospace;
+				display: none;
 			}
-			h2, h3, h4, h5, h6, .und {
+			.und {
 				text-decoration: underline;
 			}
 			.bol {
 				font-weight: bold;
 			}
+			.pick {
+				width: 12px;
+				height: 12px;
+			}
+
 			.section { }
+			.guitarpro { }
+
 		</style>
 	</head>
 
@@ -28,12 +36,11 @@
 
 		<!-- Contenido -->
 		<!--
-			Una section consta de un h1 y [1..n] div's:
-			- El h1 es el título
+			Una section debe tener id. Consta de un h1 y [1..n] div's:
+			- El h1 es el título: si tiene la clase guitarpro mostrará un link a gp/{id}.gpx
 			- Los divs son el contenido: pueden ser otra section o no
 			El js se encarga de armar el índice y poner los links en su lugar
 		-->
-		!!! Esto está siendo toqueteado para mejorarlo. No mire nada, podría hacerle mal.
 		<div class="section" id="ubicacion-notas-diapason">
 			<h1>Ubicación de las notas en el diapasón</h1>
 
@@ -59,6 +66,8 @@
 				<h1>Escala mayor de C y menor de A</h1>
 
 				<div>
+					Digamos que es la base de todo...<br>
+					<br>
 					<div class="und">Escala mayor de C:</div>
 					<div class="bol">
 						1°&nbsp; 2°&nbsp; 3°&nbsp; 4°&nbsp; 5°&nbsp; 6°&nbsp; 7°&nbsp; 8°
@@ -101,9 +110,9 @@
 
 					<span>-&gt; </span><span class="und">Relación:</span>
 					<div>
-						- En el 6° grado de la escala de C empieza la escala menor de A (A es el relativo menor de C).<br>
-						- En el 3° grado de la escala de A- empieza la escala mayor de C (C es el relativo mayor de A).<br>
-						Esta relación tiene que ver con los modos griegos, la escala menor natural es el 6° modo (eólico).
+						- En el 6° grado de la escala mayor de C empieza la escala menor de A (A es el relativo menor de C).<br>
+						- En el 3° grado de la escala menor de A empieza la escala mayor de C (C es el relativo mayor de A).<br>
+						Esta relación tiene que ver con los modos griegos, la escala menor natural es el 6° modo (eólico).<br>La diferencia entre una escala mayor y una menor está en los grados 3° y 6°, el resto son iguales.
 					</div>
 				</div>
 			</div>
@@ -112,9 +121,9 @@
 				<h1>Escalas pentatónicas y de Blues</h1>
 
 				<div>
-					Es una escala de 5 sonidos:<br>
-					- Si a una escala mayor le quitamos el 4° y 7° grado, nos queda una escala pentatónica mayor<br>
-					- Si a una escala menor natural le quitamos el 2° y 6° grado, nos queda una escala pentatónica menor<br>
+					Es una escala "rockera", de 5 sonidos:<br>
+					- Si a una escala mayor le sacamos el 4° y 7° grado, nos queda una escala pentatónica mayor<br>
+					- Si a una escala menor natural le sacamos el 2° y 6° grado, nos queda una escala pentatónica menor<br>
 					<br>
 					La escala de Blues es una escala pentatónica a la que se le agrega la <span class="bol">blue note</span> (3° b o # -según si es menor o	mayor-).
 				</div>
@@ -146,12 +155,15 @@
 					E&nbsp;&nbsp; F&nbsp;&nbsp; G&nbsp;&nbsp; A&nbsp;&nbsp; B&nbsp;&nbsp;
 					C&nbsp;&nbsp; D<br>
 					<br>
-					Parece un cambio muy simple pero tocar la escala frigia da un sonido totalmente diferente al que se da tocando la escala mayor o “modo jónico”.	Con esta nomenclatura, la escala menor natural (que partía del 6° grado) sería el “modo eólico”.<br>
+					Parece un cambio muy simple pero tocar la escala frigia da un sonido totalmente diferente al que se da tocando la escala mayor o “modo jónico”.	Con esta nomenclatura, la escala menor natural (que partía del 6° grado) pasaría a llamarse “modo eólico”.<br>
 					<br>
-					Con esto separamos la escala mayor en 7 escalas. La ventaja es poder hacer una canción en -por ejemplo- la tonalidad mixolidia, o el modo que sea.<br>
+					Con esto separamos la escala mayor en 7 escalas, lo que nos da la opción de hacer una canción en -por ejemplo- la tonalidad mixolidia, o el modo que sea.<br>
 					<br>
-					<span class="und">Improvisando:</span><br>
-					Podés usar el modo correspondiente a cada acorde en el momento que corresponda. Ejemplo: Base en C, Dm, G. Improvisarías en los modos jónico, dórico y mixolidio respectivamente.<br>
+					<span class="und">Usándolos en una tonalidad:</span><br>
+					Se puede usar el modo asociado a cada acorde en el momento que corresponda. Por ejemplo: Base en C, Dm, G. Improvisaríamos en los modos jónico, dórico y mixolidio respectivamente. Esto resaltaría más la funcíón que cumple cada acorde en la armonía.<br>
+					<br>
+					<span class="und">Usándolos como escala:</span><br>
+					Podemos averiguar el sonido de cada modo, dejando sonar por ejemplo un acorde C y tocar la escala jónica de C, un Dm y tocar la escala dórica de D, un Em y tocar la escala frigia de E, etc.<br>
 					<br>
 					<span class="und">Mayores y menores:</span><br>
 					Modos mayores: Jónico, Lidio, Mixolidio<br>
@@ -166,13 +178,9 @@
 					Mixolidio: 7° menor<br>
 					Locrio: 2° y 5° bemol<br>
 					<br>
-					Conviene resaltar esas notas al tocar para darle una sonoridad acorde al
-					modo que está sonando.<br>
+					Es conveniente conocer esto a la hora de improvisar, para poder "sonar dórico" o "sonar mixolidio".<br>
 					<br>
-					<span class="und">Los modos están en la armonía:</span><br>
-					Si vos tocás sobre un acorde G la escala jónica de C, va a sonar mixolidio igual. En ese caso al cerrar, habría que terminar el solo en G. Si estás	improvisando en C mayor sobre un acorde C, y después pasás a un acorde Dm, primero va a sonar jónico y después dórico: La gracia está en plantarte en un modo determinado, (el dórico, por ejemplo) con un acorde Dm sonando de	fondo, e improvisar con la escala dórica de D.<br>
-					<br>
-					<span class="und">Uso de los modos a nivel melódico:</span> <br>
+					<span class="und">Uso de los modos a nivel melódico:</span><br>
 					<br>
 					Maj7&nbsp; =&gt; Lidio o Jónico<br>
 					m7&nbsp;&nbsp;&nbsp; =&gt; Dórico o Eólico<br>
@@ -181,412 +189,510 @@
 					m7b5&nbsp; =&gt; Locrio<br>
 				</div>
 			</div>
+
+			<div class="section" id="escala-menor-armonica">
+				<h1>Escala menor armónica</h1>
+
+				<div>
+					Es igual a la escala menor natural pero con el 7° grado aumentado.<br>
+					Lo más común es utilizar el 5° modo de la escala, y en ese caso estaríamos hablando del <span class="bol">modo frigio dominante</span>. Este modo se puede usar cuando estamos en un acorde dominante, cuando resuelve a un acorde menor.
+				</div>
+			</div>
+
+			<div class="section" id="escala-menor-melodica">
+				<h1>Escala menor melódica</h1>
+
+				<div>
+					Es una escala derivada del modo eólico. Se suele tocar normalmente al ascender, pero descendiendo con el modo eólico sin alteraciones.
+				</div>
+			</div>
+
+			<div class="section" id="escala-disminuida">
+				<h1>Escala disminuida</h1>
+
+				<div>
+					- Puede sonar sobre un acorde 7, si se toca un semitono más arriba *<br>
+					- Se repite cada 1 tono y medio<br>
+					<br>
+					* Un acorde 7, se puede reemplazar por un acorde ° (disminuído) ubicado un
+					semitono más arriba. Entonces, por ejemplo, arriba de un B7 podría usar la
+					escala o el arpegio disminuído de C. En este caso el C° estaría actuando
+					como dominante secundario.
+				</div>
+			</div>
+
+			<div class="section" id="escala-aumentada">
+				<h1>Escala aumentada</h1>
+
+				<div>
+					- Puede sonar sobre un acorde 7<br>
+					- Se repite cada 2 tonos
+				</div>
+			</div>
+
+			<div class="section" id="areas-tonales">
+				<h1>Áreas tonales</h1>
+
+				<div>
+					<div>
+						1° Tónica<br>
+						2° Subdominante<br>
+						3° Tónica<br>
+						4° Subdominante<br>
+						5° Dominante<br>
+						6° Tónica<br>
+						7° Dominante
+					</div>
+					<br>
+					<span class="und">En términos de tensión:</span> Dominante &gt; Subdominante &gt; Tónica.<br>
+					<span class="und">Acordes 7:</span> Son dominantes.
+				</div>
+			</div>
+
+			<div class="section" id="digitaciones-escalas">
+				<h1>Digitaciones</h1>
+
+				<div class="section guitarpro" id="digitacion-escala-mayor-c">
+					<h1>Escala mayor de C</h1>
+
+					<div>
+						<img src="images/escala-mayor-c-posicion-0.png"><br>
+						<img src="images/escala-mayor-c-posicion-1.png"><br>
+						<img src="images/escala-mayor-c-posicion-2.png"><br>
+						<img src="images/escala-mayor-c-posicion-3.png"><br>
+						<img src="images/escala-mayor-c-posicion-4.png"><br>
+						<img src="images/escala-mayor-c-posicion-5.png">
+					</div>
+				</div>
+
+				<div class="section guitarpro" id="digitacion-escala-blues-mayor-a">
+					<h1>Escala de Blues mayor de A</h1>
+
+					<div>
+						<img src="images/escala-blues-mayor-a-posicion-1.png"><br>
+						<img src="images/escala-blues-mayor-a-posicion-2.png"><br>
+						<img src="images/escala-blues-mayor-a-posicion-3.png"><br>
+						<img src="images/escala-blues-mayor-a-posicion-4.png"><br>
+						<img src="images/escala-blues-mayor-a-posicion-5.png">
+					</div>
+				</div>
+
+				<div class="section guitarpro" id="digitacion-escala-blues-menor-a">
+					<h1>Escala de Blues menor de A</h1>
+
+					<div>
+						<img src="images/escala-blues-menor-a-posicion-0.png"><br>
+						<img src="images/escala-blues-menor-a-posicion-1.png"><br>
+						<img src="images/escala-blues-menor-a-posicion-2.png"><br>
+						<img src="images/escala-blues-menor-a-posicion-3.png"><br>
+						<img src="images/escala-blues-menor-a-posicion-4.png"><br>
+						<img src="images/escala-blues-menor-a-posicion-5.png">
+					</div>
+				</div>
+
+				<div class="section guitarpro" id="digitacion-modos-griegos-a">
+					<h1>Modos griegos en A</h1>
+
+					<div>
+						<img src="images/modo-jonico.png"><br>
+						<img src="images/modo-dorico-frigio-lidio.png"><br>
+						<img src="images/modo-mixolidio-eolico-locrio.png">
+					</div>
+				</div>
+
+				<div class="section guitarpro" id="digitacion-modo-frigio-dominante-e">
+					<h1>Modo frigio dominante en E</h1>
+
+					<div>
+						<img src="images/modo-frigio-dominante-e-posicion-0.png"><br>
+						<img src="images/modo-frigio-dominante-e-posicion-1.png"><br>
+						<img src="images/modo-frigio-dominante-e-posicion-2.png"><br>
+						<img src="images/modo-frigio-dominante-e-posicion-3.png"><br>
+						<img src="images/modo-frigio-dominante-e-posicion-4.png"><br>
+						<img src="images/modo-frigio-dominante-e-posicion-5.png">
+					</div>
+				</div>
+
+				<div class="section guitarpro" id="digitacion-escala-menor-melodica-c">
+					<h1>Escala menor melódica de C</h1>
+
+					<div>
+						<img src="images/escala-menor-melodica-c-posicion-1.png"><br>
+						<img src="images/escala-menor-melodica-c-posicion-2.png"><br>
+						<img src="images/escala-menor-melodica-c-posicion-3.png"><br>
+						<img src="images/escala-menor-melodica-c-posicion-4.png"><br>
+						<img src="images/escala-menor-melodica-c-posicion-5.png">
+					</div>
+				</div>
+
+				<div class="section guitarpro" id="digitacion-escala-disminuida-a">
+					<h1>Escala disminuída de A</h1>
+
+					<div>
+						<img src="images/escala-disminuida-a.png"><br>
+					</div>
+				</div>
+
+
+				<div class="section guitarpro" id="digitacion-escala-aumentada-a">
+					<h1>Escala aumentada de A</h1>
+
+					<div>
+						<img src="images/escala-aumentada-a.png"><br>
+					</div>
+				</div>
+			</div>
 		</div>
 
-    <h3><strong style="text-decoration: underline;"><a id="escala-menor-armonica"
-          name="escala-menor-armonica">Escalas &gt; Escala menor armónica:</a></strong></h3>
-    Es igual a la escala menor natural pero con el 7° grado aumentado.<br>
-    Lo más común es utilizar el 5° modo de la escala, y en ese caso estaríamos
-    hablando del <strong>modo frigio dominante</strong>. Este modo se puede
-    usar cuando estamos en un acorde dominante, cuando resuelve a un acorde
-    menor.<br>
-    <h3><strong style="text-decoration: underline;"><a id="escala-menor-melodica"
-          name="escala-menor-armonica">Escalas &gt; Escala menor melódica:</a></strong></h3>
-    Es una escala derivada del modo eólico. Se suele tocar normalmente al
-    ascender, pero descendiendo con el modo eólico sin alteraciones.<br>
-    <h3><strong style="text-decoration: underline;"><a id="escala-disminuida" name="escala-menor-armonica">Escalas
-          &gt; Escala disminuída:</a></strong></h3>
-    - Puede sonar sobre un acorde 7, si se toca un semitono más arriba *<br>
-    - Se repite cada 1 tono y medio<br>
-    <br>
-    * Un acorde 7, se puede reemplazar por un acorde ° (disminuído) ubicado un
-    semitono más arriba. Entonces, por ejemplo, arriba de un B7 podría usar la
-    escala o el arpegio disminuído de C. En este caso el C° estaría actuando
-    como dominante secundario.<br>
-    <h3><strong style="text-decoration: underline;"><a id="escala-aumentada" name="escala-menor-armonica">Escalas
-          &gt; Escala aumentada:</a></strong></h3>
-    - Puede sonar sobre un acorde 7<br>
-    - Se repite cada 2 tonos<br>
-    <h3><strong style="text-decoration: underline;"><a id="escalas-grados" name="escalas-grados">Escalas
-          &gt; Áreas tonales:<br>
-        </a></strong></h3>
-    <p>1° Tónica<br>
-      2° Subdominante<br>
-      3° Tónica<br>
-      4° Subdominante<br>
-      5° Dominante<br>
-      6° Tónica<br>
-      7° Dominante</p>
-    <span style="text-decoration: underline;">En términos de tensión:</span>
-    Dominante &gt; Subdominante &gt; Tónica.<br>
-    <span style="text-decoration: underline;">Acordes 7:</span> Son dominantes.<br>
+		<div class="section" id="arpegios">
+			<h1>Arpegios</h1>
 
-		<!--
+			<div class="section guitarpro" id="arpegio-c">
+				<h1>Arpegio de C</h1>
 
+				<div>
+					<img src="images/arpegio-c.png">
+				</div>
+			</div>
 
-    <h3><strong style="text-decoration: underline;"><a id="escalas-digitaciones"
-          name="escalas-digitaciones">Escalas &gt; Digitaciones...</a></strong></h3>
-    <h4><strong style="text-decoration: underline;"><a id="escala-mayor-de-c" name="escala-mayor-de-c">Escalas
-          &gt; Digitaciones &gt; Escala mayor de C:</a></strong> <a href="gp/escala-mayor-c.zip"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h4>
-    <img alt="pos0" src="images/escala-mayor-c-posicion-0.png"><br>
-    <br>
-    <img alt="pos1" src="images/escala-mayor-c-posicion-1.png"><br>
-    <br>
-    <img alt="pos2" src="images/escala-mayor-c-posicion-2.png"><br>
-    <br>
-    <img alt="pos3" src="images/escala-mayor-c-posicion-3.png"><br>
-    <br>
-    <img alt="pos4" src="images/escala-mayor-c-posicion-4.png"><br>
-    <br>
-    <img alt="pos5" src="images/escala-mayor-c-posicion-5.png"><br>
-    <h4><strong style="text-decoration: underline;"><a id="escala-de-blues-menor-de-a"
-          name="escala-de-blues-menor-de-a">Escalas &gt; Digitaciones &gt;
-          Escala de blues menor de A:</a></strong> <a href="gp/escala-blues-menor-a.zip"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h4>
-    <h4><img alt="pos0" src="images/escala-blues-menor-a-posicion-0.png"></h4>
-    <span><img alt="pos1" src="images/escala-blues-menor-a-posicion-1.png"><br>
-      <br>
-      <img alt="pos2" src="images/escala-blues-menor-a-posicion-2.png"><br>
-      <br>
-      <img alt="pos3" src="images/escala-blues-menor-a-posicion-3.png"><br>
-      <br>
-      <img alt="pos4" src="images/escala-blues-menor-a-posicion-4.png"><br>
-      <br>
-      <img alt="pos5" src="images/escala-blues-menor-a-posicion-5.png"><br>
-    </span>
-    <h4><strong style="text-decoration: underline;"><a id="escala-de-blues-mayor-de-a"
-          name="escala-de-blues-mayor-de-a">Escalas &gt; Digitaciones &gt;
-          Escala de blues mayor de A:</a></strong> <a href="gp/escala-blues-mayor-a.zip"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h4>
-    <img alt="pos1" src="images/escala-blues-mayor-a-posicion-1.png"><br>
-    <br>
-    <img alt="pos2" src="images/escala-blues-mayor-a-posicion-2.png"><br>
-    <br>
-    <img alt="pos3" src="images/escala-blues-mayor-a-posicion-3.png"><br>
-    <br>
-    <img alt="pos4" src="images/escala-blues-mayor-a-posicion-4.png"><br>
-    <br>
-    <img alt="pos5" src="images/escala-blues-mayor-a-posicion-5.png"><br>
-    <h4><strong style="text-decoration: underline;"><a id="digitacion-modos-en-a"
-          name="digitacion-modos-en-a">Escalas &gt; Digitaciones &gt; Modos
-          griegos en A:</a></strong> <a href="gp/modos-griegos.gpx"><img src="images/gp.png"
-          style="width: 12px; height: 12px;"></a></h4>
-    <img alt="" src="images/modo-jonico.png"><br>
-    <img alt="" src="images/modo-dorico-frigio-lidio.png"><br>
-    <img alt="" src="images/modo-mixolidio-eolico-locrio.png"><br>
-    <h4><strong style="text-decoration: underline;"><a id="modo-frigio-dominante-en-e"
-          name="modo-frigio-dominante-en-e">Escalas &gt; Digitaciones &gt; Modo
-          frigio dominante en E:</a></strong> <a href="gp/escala-frigio-dominante-e.zip"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h4>
-    <img alt="" src="images/escala-frigio-dominante-e-posicion-0.png"><br>
-    <br>
-    <img alt="" src="images/escala-frigio-dominante-e-posicion-1.png"><br>
-    <br>
-    <img alt="" src="images/escala-frigio-dominante-e-posicion-2.png"><br>
-    <br>
-    <img alt="" src="images/escala-frigio-dominante-e-posicion-3.png"><br>
-    <br>
-    <img alt="" src="images/escala-frigio-dominante-e-posicion-4.png"><br>
-    <br>
-    <img alt="" src="images/escala-frigio-dominante-e-posicion-5.png"><br>
-    <h4><strong style="text-decoration: underline;"><a id="escala-menor-melodica-de-c"
-          name="escala-mayor-de-c">Escalas &gt; Digitaciones &gt; Escala menor
-          melódica de C:</a></strong> <a href="gp/escala-menor-melodica-c.zip"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h4>
-    <img alt="pos1" src="images/escala-menor-melodica-c-posicion-1.png"><br>
-    <br>
-    <img alt="pos2" src="images/escala-menor-melodica-c-posicion-2.png"><br>
-    <br>
-    <img alt="pos3" src="images/escala-menor-melodica-c-posicion-3.png"><br>
-    <br>
-    <img alt="pos4" src="images/escala-menor-melodica-c-posicion-4.png"><br>
-    <br>
-    <img alt="pos5" src="images/escala-menor-melodica-c-posicion-5.png"><br>
-    <h4><strong style="text-decoration: underline;"><a id="escala-disminuida-a"
-          name="escala-mayor-de-c">Escalas &gt; Digitaciones &gt; Escala
-          disminuída de A:</a></strong> <a href="gp/escala-disminuida-a.gpx"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h4>
-    <img alt="pos1" src="images/escala-disminuida-a.png"><br>
-    <h4><strong style="text-decoration: underline;"><a id="escala-aumentada-a" name="escala-mayor-de-c">Escalas
-          &gt; Digitaciones &gt; Escala aumentada de A:</a></strong> <a href="gp/escala-aumentada-a.gpx"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h4>
-    <img alt="pos1" src="images/escala-aumentada-a.png"><br>
-    <h2><strong style="text-decoration: underline;"><a id="arpegios" name="arpegios">Arpegios...</a></strong></h2>
-    <h3><strong style="text-decoration: underline;"><a id="arpegio-de-c" name="arpegio-de-c">Arpegios
-          &gt; Arpegio de C:</a></strong> <a href="gp/arpegio-mayor-c.gpx"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h3>
-    <img alt="mayor" src="images/arpegio-mayor-c.png"><br>
-    <h3><strong style="text-decoration: underline;"><a id="arpegio-de-c-menor" name="arpegio-de-c-menor">Arpegios
-          &gt; Arpegio de Cm:</a></strong> <a href="gp/arpegio-menor-c.gpx"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h3>
-    <img alt="menor" src="images/arpegio-menor-c.png"><br>
-    <h3><strong style="text-decoration: underline;"><a id="arpegios-septima" name="arpegios-septima">Arpegios
-          &gt; Arpegios de Cmaj7, C7, Cm7 y C∅:</a></strong> <a href="gp/arpegios-septima.zip"><img
-          src="images/gp.png" style="width: 12px; height: 12px;"></a></h3>
-    <img alt="" src="images/arpegio-cmaj7.png"><br>
-    <br>
-    <br>
-    <img alt="" src="images/arpegio-c7.png"><br>
-    <br>
-    <img alt="" src="images/arpegio-cm7.png"><br>
-    <br>
-    <img alt="" src="images/arpegio-cm7b5.png"><br>
-    <h3><strong style="text-decoration: underline;"><a id="arpegio-disminuido-a"
-          name="arpegios-septima">Arpegios &gt; Arpegio disminuído de A:</a></strong>
-      <a href="gp/arpegio-disminuido-a.gpx"><img src="images/gp.png" style="width: 12px; height: 12px;"></a></h3>
-    <img alt="" src="images/arpegio-disminuido-a.png"><br>
-    <h3><strong style="text-decoration: underline;"><a id="arpegio-aumentado-a"
-          name="arpegios-septima">Arpegios &gt; Arpegio aumentado de A:</a></strong>
-      <a href="gp/arpegio-aumentado-a.gpx"><img src="images/gp.png" style="width: 12px; height: 12px;"></a></h3>
-    <img alt="" src="images/arpegio-aumentado-a.png"><br>
-    <h3><strong style="text-decoration: underline;"><a id="arpegios-con-tapping-1"
-          name="arpegios-con-tapping-1">Arpegios &gt; Arpegios con tapping (1):</a></strong>
-      <a href="gp/arpegios-con-tapping-1.gpx"><img src="images/gp.png" style="width: 12px; height: 12px;"></a></h3>
-    <img alt="" src="images/arpegios-con-tapping-1.png"><br>
-    <h3><strong style="text-decoration: underline;"><a id="arpegios-con-tapping-2"
-          name="arpegios-con-tapping-2">Arpegios &gt; Arpegios con tapping (2):</a></strong>
-      <a href="gp/arpegios-con-tapping-2.gpx"><img src="images/gp.png" style="width: 12px; height: 12px;"></a></h3>
-    <img alt="" src="images/arpegios-con-tapping-2.png"><br>
-    <h2><strong style="text-decoration: underline;"><a id="acordes" name="acordes">Acordes:</a></strong></h2>
-    <h3><strong style="text-decoration: underline;"><a id="acordes-tipos" name="acordes-tipos">Acordes
-          &gt; Tipos:</a></strong></h3>
-    <span><span style="text-decoration: underline;">Diadas:</span> 1° y 3°<br>
-      <span style="text-decoration: underline;">Tríadas:</span> 1°, 3° y 5°<br>
-      <span style="text-decoration: underline;">Cuatríadas:</span> 1°, 3°, 5° y
-      7°</span><br>
-    <br>
-    <span><span style="text-decoration: underline;">Acodes modificados:</span>
-      Pueden agregarse los grados 9°, 11° y 13°<br>
-      <span style="text-decoration: underline;">Inversiones:</span><br>
-      - 1° inversión: con la 3° en el bajo<br>
-      - 2° inversión: con la 5° en el bajo<br>
-      - 3° inversión: con la 7° en el bajo<br>
-      <br>
-      <span style="text-decoration: underline;">Acordes disminuídos:<br>
-      </span>Son acordes menores con la quinta disminuída un semitono.<br>
-      <br>
-      <span style="text-decoration: underline;">Acordes aumentados:<br>
-      </span>Son acordes mayores con la quinta aumentada un semitono.<br>
-    </span>
-    <h3><strong style="text-decoration: underline;"><a id="acordes-nomenclatura"
-          name="acordes-nomenclatura">Acordes &gt; Nomenclatura:</a></strong></h3>
-    <span style="text-decoration: underline;">Ejemplos:</span><br>
-    D (Re mayor)<br>
-    Gm (Sol menor)<br>
-    Dmaj7 (Re mayor con séptima mayor)<br>
-    Fm7 (Fa menor con séptima menor)<br>
-    Fmmaj7 (Fa menor con séptima mayor)<br>
-    B° (Si disminuído)<br>
-    B°7 (Si disminuído -con séptima disminuída-)<br>
-    B∅ = Bm7b5 (Si semidisminuído -con séptima menor-)<br>
-    Eaug7 (Mi aumentado -con séptima menor-)<br>
-    Eaug7M (Mi aumentado -con séptima mayor-)<br>
-    Dsus4 (Re mayor suspendido 4°) *<br>
-    <br>
-    * los acordes suspendidos "suspenden" la 3°, cambiándola por la 2° o la 4°<br>
-    <br>
-    <span style="text-decoration: underline;">Defaults:</span><br>
-    - Si no se indica <strong>m</strong> es mayor.<br>
-    - <strong>7</strong> a secas es séptima menor. Para séptima mayor se
-    escribe <strong>maj7</strong>.<br>
-    - <strong>°</strong> = dim = 5b = disminuído.<br>
-    - <strong></strong>aug = aumentado.<br>
-    <h3><strong style="text-decoration: underline;"><a id="acordes-formacion" name="acordes-formacion">Acordes
-          &gt; Formación...</a></strong></h3>
-    <h4><strong style="text-decoration: underline;"><a id="acordes-formacion-triadas"
-          name="acordes-formacion-triadas">Acordes &gt; Formación &gt; Tríadas:</a></strong></h4>
-    Se utiliza la superposición de terceras. Utilizando una escala determinada,
-    se deben obtener los grados 1°, 3°, 5° del acorde. Las terceras pueden ser:<br>
-    <br>
-    <strong>3° mayor (3M):</strong> 2 tonos ↑<br>
-    <strong>3° menor (3m):</strong> 1 tono y medio ↑<br>
-    <br>
-    Una vez identificada la 3°, hay que identificar la 5° (que es la 3° de la
-    3°).<br>
-    El acorde se va a determinar con las siguientes reglas:<br>
-    <br>
-    <strong>3°&nbsp;&nbsp;&nbsp; 5°</strong><br>
-    3M + 3m = Tríada mayor<br>
-    3m + 3M = Tríada menor<br>
-    3M + 3M = Tríada aumentada<br>
-    3m + 3m = Tríada disminuída<br>
-    <h4><strong style="text-decoration: underline;"><a id="acordes-formacion-cuatriadas"
-          name="acordes-formacion-cuatriadas">Acordes &gt; Formación &gt;
-          Cuatríadas:</a></strong></h4>
-    A la tríada obtenida con el proceso anterior, se le debe agregar el 7°
-    grado. Las séptimas pueden ser:<br>
-    <br>
-    <strong>7° mayor (7M):</strong> <span>½ tono ↓<br>
-      <strong>7° menor (7m):</strong> 1 tono ↓<br>
-      <br>
-      La 7° es la 3° de la 5°. Las reglas son:<br>
-      <br>
-      <strong>Tríada&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 7°</strong><br>
-      Mayor &nbsp; &nbsp;&nbsp; + 3M = maj7<br>
-      Mayor &nbsp; &nbsp;&nbsp; + 3m = 7</span><br>
-    Menor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + 3M = mmaj7<br>
-    Menor&nbsp;&nbsp;&nbsp; &nbsp; + 3m = m7<br>
-    Aumentada&nbsp; + 3m = aug7<br>
-    Disminuída + 3M = m7b5<br>
-    Disminuída + 3m = °7<strong><br>
-      <br>
-    </strong>
-    <h4> <strong style="text-decoration: underline;"><a id="formacion-de-em7" name="formacion-de-em7">Acordes
-          &gt; Formación &gt; Ejemplo (de Em7):</a></strong> <span style="text-decoration: underline;"></span></h4>
-    Formamos el acorde Em7 de la escala mayor de C...<br>
-    <br>
-    <img alt="formación" src="images/formacion-em7.png"><br>
-    <h3><strong style="text-decoration: underline;"><a id="acordes-dibujos-de-acordes"
-          name="acordes-dibujos-de-acordes">Acordes &gt; Dibujos de acordes...</a></strong></h3>
-    <h4><strong style="text-decoration: underline;"><a id="acordes-basicos" name="acordes-basicos">Acordes
-          &gt; Dibujos de acordes &gt; Acordes básicos:</a></strong></h4>
-    <table style="width: 100%; text-align: center" border="0">
-      <tbody>
-        <tr>
-          <td>C<br>
-            <img alt="" src="images/acorde-c.png"></td>
-          <td>D<br>
-            <img alt="" src="images/acorde-d.png"></td>
-        </tr>
-        <tr>
-          <td style="width: 550.283px;">Dm<br>
-            <img alt="" src="images/acorde-dm.png"></td>
-          <td style="width: 549.717px;">E<br>
-            <img alt="" src="images/acorde-e.png"></td>
-        </tr>
-        <tr>
-          <td>Em<br>
-            <img alt="" src="images/acorde-em.png"></td>
-          <td>G<br>
-            <img alt="" src="images/acorde-g.png"></td>
-        </tr>
-        <tr>
-          <td>A<br>
-            <img alt="" src="images/acorde-a.png"></td>
-          <td>Am<br>
-            <img alt="" src="images/acorde-a.png"></td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-    <h4><strong style="text-decoration: underline;"><a id="acordes-7ma-abreviados"
-          name="acordes-7ma-abreviados">Acordes &gt; Dibujos de acordes &gt;
-          Acordes 7ma abreviados:</a></strong></h4>
-    <img alt="" src="images/acordes-7ma-abreviados.png"><br>
-    <br>
-    <h4><strong style="text-decoration: underline;"><a id="acordes-inversiones-7ma"
-          name="acordes-inversiones-7ma">Acordes &gt; Dibujos de acordes &gt;
-          Inversiones 7ma:</a></strong></h4>
-    En el ejemplo usamos G para la 6ta cuerda y C para la 5ta. Cada compás tiene
-    el acorde en su forma natural, y sus 3 inversiones.<br>
-    <br>
-    <img alt="" src="images/inversiones-7ma.png"><br>
-    <br>
-    <h4><strong style="text-decoration: underline;"><a id="acordes-grafico-general"
-          name="acordes-grafico-general">Acordes &gt; Dibujos de acordes &gt;
-          Gráfico general:</a></strong></h4>
-    <table style="width: 100%; text-align: center" border="0">
-      <tbody>
-        <tr>
-          <td><img alt="" src="images/acordes-6ta-cuerda.gif"><br>
-          </td>
-          <td><img alt="" src="images/acordes-5ta-cuerda.gif"><br>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-    <h2><strong style="text-decoration: underline;"><a id="composicion" name="composicion">Composición:</a></strong></h2>
-    <h3><strong style="text-decoration: underline;"><a id="composicion-tonalidades"
-          name="composicion-tonalidades">Composición &gt; Tonalidades</a></strong></h3>
-    Una canción está en 1 o más tonalidades. El cambio entre tonalidades se
-    denomina modulación.<br>
-    <br>
-    Una tonalidad se basa en una escala, que es básicamente una sucesión de
-    notas. En principio, si un tema está en la tonalidad de (por ejemplo) Am (la
-    menor), cualquier nota de la escala menor de A podría sonar: A, B, C, D, E,
-    F, o G.<br>
-    <h3><strong style="text-decoration: underline;"><a id="composicion-armonia"
-          name="composicion-armonia">Composición &gt; Armonía de escalas</a></strong></h3>
-    Los acordes que pueden sonar sobre una escala surgen de las reglas de
-    formación de acordes. Como la armonía de una escala se puede transportar a
-    cualquier tónica, en este cuadro se resumen las de la escala mayor, menor, y
-    menor armónica:<br>
-    <br>
-    <table style="width: 722px; height: 84px;" border="1">
-      <tbody>
-        <tr>
-          <td><strong>Esc/Gra<br>
-            </strong></td>
-          <td><strong>1°<br>
-            </strong></td>
-          <td><strong>2°<br>
-            </strong></td>
-          <td><strong>3°<br>
-            </strong></td>
-          <td><strong>4°<br>
-            </strong></td>
-          <td><strong>5°<br>
-            </strong></td>
-          <td><strong>6°<br>
-            </strong></td>
-          <td><strong>7°<br>
-            </strong></td>
-        </tr>
-        <tr>
-          <td style="height: 14px;">Mayor</td>
-          <td>maj7</td>
-          <td>m7</td>
-          <td>m7</td>
-          <td>maj7</td>
-          <td>7</td>
-          <td>m7</td>
-          <td style="width: 72.5px;">∅</td>
-        </tr>
-        <tr>
-          <td style="width: 179.033px;">Menor</td>
-          <td style="width: 72.95px;">m7</td>
-          <td style="width: 72.2997px;">∅</td>
-          <td style="width: 72.7px;">maj7</td>
-          <td style="width: 72.583px;">m7</td>
-          <td style="width: 72.6px;">m7</td>
-          <td style="width: 72.417px;">maj7</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>Menor armónica</td>
-          <td>mmaj7</td>
-          <td>∅</td>
-          <td>aug7M</td>
-          <td>m7</td>
-          <td>79b</td>
-          <td>maj7</td>
-          <td>°7</td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-    <h3> <strong style="text-decoration: underline;"><a id="composicion-tension"
-          name="composicion-tension">Composición &gt; Tensión en los acordes</a></strong></h3>
-    <span style="text-decoration: underline;"><span style="font-weight: bold;"><strong></strong></span></span><span
-      style="text-decoration: underline;"><span style="font-weight: bold;"><strong></strong></span></span>Para
-    que una canción termine “bien”, el tema debería terminar en su tónica.
-    Cuando digo “bien” me refiero a que termina con un grado de tranquilidad,
-    que da a entender que la canción terminó.<br>
-    <br>
-    Esto sirve mucho para saber en qué tonalidad está una canción, ya que la
-    mayoría cumple esta “regla”. Es cuestión de fijarse en qué nota termina y
-    listo.<br>
-    <br>
-    La razón es que cada grado de una escala genera una determinada tensión,
-    siendo el 5° grado (“dominante”) el que más tensión genera, y el 1° grado
-    (“tónica”) el que menos.<br>
-    Ej: Probar la progresión de acordes: C, F, Dm, G =&gt; Si no la terminás en
-    C, da la sensación de que te vas a morir.
-    -->
+			<div class="section guitarpro" id="arpegio-cm">
+				<h1>Arpegio de Cm</h1>
 
-    	<!-- Scripts -->
+				<div>
+					<img src="images/arpegio-cm.png">
+				</div>
+			</div>
+
+			<div class="section guitarpro" id="arpegios-septima-c">
+				<h1>Arpegios de Cmaj7, C7, Cm7 y C∅</h1>
+
+				<div>
+					<img src="images/arpegio-cmaj7.png"><br>
+					<img src="images/arpegio-c7.png"><br>
+					<img src="images/arpegio-cm7.png"><br>
+					<img src="images/arpegio-cm7b5.png">
+				</div>
+			</div>
+
+			<div class="section guitarpro" id="arpegio-disminuido-a">
+				<h1>Arpegio disminuído de A</h1>
+
+				<div>
+					<img src="images/arpegio-disminuido-a.png">
+				</div>
+			</div>
+
+			<div class="section guitarpro" id="arpegio-aumentado-a">
+				<h1>Arpegio aumentado de A</h1>
+
+				<div>
+					<img src="images/arpegio-aumentado-a.png">
+				</div>
+			</div>
+
+			<div class="section guitarpro" id="arpegios-con-tapping-1">
+				<h1>Arpegios con tapping (1)</h1>
+
+				<div>
+					<img src="images/arpegios-con-tapping-1.png">
+				</div>
+			</div>
+
+			<div class="section guitarpro" id="arpegios-con-tapping-2">
+				<h1>Arpegios con tapping (2)</h1>
+
+				<div>
+					<img src="images/arpegios-con-tapping-2.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="acordes">
+			<h1>Acordes</h1>
+
+			<div class="section" id="tipos-de-acordes">
+				<h1>Tipos</h1>
+
+				<div>
+					<span class="und">Díadas:</span> 1° y 3°.<br>
+					<span class="und">Tríadas:</span> 1°, 3° y 5° (tónica, modal y dominante)<br>
+					<span class="und">Cuatríadas:</span> 1°, 3°, 5° y 7°.<br>
+					<br>
+					<span class="und">Acordes extendidos:</span><br>
+					Pueden agregarse los grados 9°, 11° y 13°.<br>
+					<br>
+					<span class="und">Inversiones:</span><br>
+					- 1° inversión: con la 3° en el bajo<br>
+					- 2° inversión: con la 5° en el bajo<br>
+					- 3° inversión: con la 7° en el bajo<br>
+					<br>
+					<span class="und">Acordes disminuídos:</span><br>
+					Son acordes menores con la 5° disminuída un semitono.<br>
+					<br>
+					<span class="und">Acordes aumentados:</span><br>
+					Son acordes mayores con la 5° aumentada un semitono.
+				</div>
+			</div>
+
+			<div class="section" id="nomenclatura-acordes">
+				<h1>Nomenclatura</h1>
+
+				<div>
+					<span class="und">Ejemplos:</span><br>
+					D (Re mayor)<br>
+					Gm (Sol menor)<br>
+					Dmaj7 (Re mayor con séptima mayor)<br>
+					Fm7 (Fa menor con séptima menor)<br>
+					Fmmaj7 (Fa menor con séptima mayor)<br>
+					B° (Si disminuído)<br>
+					B°7 (Si disminuído -con séptima disminuída-)<br>
+					B∅ = Bm7b5 (Si semidisminuído -con séptima menor-)<br>
+					Eaug7 (Mi aumentado -con séptima menor-)<br>
+					Eaug7M (Mi aumentado -con séptima mayor-)<br>
+					Dsus4 (Re mayor suspendido 4°) *<br>
+					<br>
+					* los acordes suspendidos, "suspenden" la 3°, cambiándola por la 2° o la 4°.<br>
+					<br>
+					<span class="und">Defaults:</span><br>
+					- Si no se indica <span class="bol">m</span> es mayor.<br>
+					- <span class="bol">7</span> a secas es séptima menor. Para séptima mayor se escribe <span class="bol">maj7</span>.<br>
+					- <span class="bol">°</span> = dim = 5b = disminuído.<br>
+					- <span class="bol">aug</span> = aumentado.
+				</div>
+			</div>
+
+			<div class="section" id="formacion-acordes">
+				<h1>Formación</h1>
+
+				<div class="section" id="formacion-triadas">
+					<h1>Tríadas</h1>
+
+					<div>
+						Se utiliza la superposición de terceras. Utilizando una escala determinada, se deben obtener los grados 1°, 3°, 5° del acorde. Las terceras pueden ser:<br>
+						<br>
+						<span class="bol">3° mayor (3M):</span> 2 tonos ↑<br>
+						<span class="bol">3° menor (3m):</span> 1 tono y medio ↑<br>
+						<br>
+						Una vez identificada la 3°, hay que identificar la 5° (que es la 3° de la 3°).<br>
+						El acorde se va a determinar con las siguientes reglas:<br>
+						<br>
+						<span class="bol">3°&nbsp;&nbsp; 5°</span><br>
+						3M + 3m = Tríada mayor<br>
+						3m + 3M = Tríada menor<br>
+						3M + 3M = Tríada aumentada<br>
+						3m + 3m = Tríada disminuída<br>
+					</div>
+				</div>
+
+				<div class="section" id="formacion-cuatriadas">
+					<h1>Cuatríadas</h1>
+
+					<div>
+						A la tríada obtenida con el proceso anterior, se le debe agregar el 7° grado. Las séptimas pueden ser:<br>
+						<br>
+						<span class="bol">7° mayor (7M):</span> ½ tono ↓<br>
+						<span class="bol">7° menor (7m):</span> 1 tono ↓<br>
+						<br>
+						La 7° es la 3° de la 5°. Las reglas son:<br>
+						<br>
+						<span class="bol">Tríada&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7°</span><br>
+						Mayor &nbsp; &nbsp;&nbsp; + 3M = maj7<br>
+						Mayor &nbsp; &nbsp;&nbsp; + 3m = 7<br>
+						Menor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + 3M = mmaj7<br>
+						Menor&nbsp;&nbsp;&nbsp; &nbsp; + 3m = m7<br>
+						Aumentada&nbsp; + 3m = aug7<br>
+						Disminuída + 3M = m7b5<br>
+						Disminuída + 3m = °7
+					</div>
+				</div>
+
+				<div class="section" id="formacion-em7">
+					<h1>Ejemplo (con Em7)</h1>
+
+					<div>
+						Sabemos que el 3° grado de la escala mayor de C es un E. Para formar el acorde seguimos el proceso anterior, nos queda:<br>
+						<br>
+						<img src="images/formacion-em7.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="section" id="dibujos-de-acordes">
+				<h1>Dibujos de acordes</h1>
+
+				<div class="section" id="acordes-basicos">
+					<h1>Acordes básicos</h1>
+
+					<div>
+						<table style="width: 100%; text-align: center" border="0">
+							<tbody>
+								<tr>
+									<td>
+										C<br>
+										<img src="images/acorde-c.png">
+									</td>
+									<td>
+										D<br>
+										<img src="images/acorde-d.png">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Dm<br>
+										<img src="images/acorde-dm.png">
+									</td>
+									<td>
+										E<br>
+										<img src="images/acorde-e.png">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Em<br>
+										<img src="images/acorde-em.png">
+									</td>
+									<td>
+										G<br>
+										<img src="images/acorde-g.png">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										A<br>
+										<img src="images/acorde-a.png">
+									</td>
+									<td>
+										Am<br>
+										<img src="images/acorde-am.png">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="section" id="acordes-7ma-abreviados">
+					<h1>Acordes 7ma abreviados</h1>
+
+					<div>
+						<img src="images/acordes-7ma-abreviados.png">
+					</div>
+				</div>
+
+				<div class="section" id="inversiones-7ma">
+					<h1>Inversiones 7ma</h1>
+
+					<div>
+						En el ejemplo usamos G para la 6ta cuerda y C para la 5ta.<br>
+						Cada compás tiene el acorde en su forma natural, y sus 3 inversiones.<br>
+						<br>
+						<img src="images/inversiones-7ma.png">
+					</div>
+				</div>
+
+				<div class="section" id="acordes-grafico-general">
+					<h1>Gráfico general</h1>
+
+					<div>
+						<table style="width: 100%; text-align: center" border="0">
+							<tbody>
+								<tr>
+									<td>
+										<img src="images/acordes-6ta-cuerda.gif">
+									</td>
+									<td>
+										<img src="images/acordes-5ta-cuerda.gif">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="composicion">
+			<h1>Composición</h1>
+
+			<div class="section" id="tonalidades">
+				<h1>Tonalidades</h1>
+
+				<div>
+					Una canción está en 1 o más tonalidades. El cambio entre tonalidades se denomina modulación<br>
+					Una tonalidad se basa en una escala, que determina las notas que se van a poder usar. En realidad, cualquier nota se puede usar en cualquier lado, pero la prioridad es siempre: notas del acorde que está sonando, notas de la escala, notas cromáticas.
+				</div>
+			</div>
+
+			<div class="section" id="armonia-escalas">
+				<h1>Armonía de las escalas</h1>
+
+				<div>
+					Los acordes que pueden sonar sobre una escala surgen de las reglas de formación de acordes.<br>
+					Como la armonía de una escala se puede transportar a cualquier tónica, en este cuadro se resumen las de la escala mayor, menor, y menor armónica:<br>
+					<br>
+					<table style="width: 500px; height: 85px;" border="1">
+						<tbody>
+							<tr>
+								<td class="bol" style="width: 130px">Esc/Gra</td>
+								<td class="bol">1°</td>
+								<td class="bol">2°</td>
+								<td class="bol">3°</td>
+								<td class="bol">4°</td>
+								<td class="bol">5°</td>
+								<td class="bol">6°</td>
+								<td class="bol">7°</td>
+							</tr>
+							<tr>
+								<td>Mayor</td>
+								<td>maj7</td>
+								<td>m7</td>
+								<td>m7</td>
+								<td>maj7</td>
+								<td>7</td>
+								<td>m7</td>
+								<td>∅</td>
+							</tr>
+							<tr>
+								<td>Menor</td>
+								<td>m7</td>
+								<td>∅</td>
+								<td>maj7</td>
+								<td>m7</td>
+								<td>m7</td>
+								<td>maj7</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Menor armónica</td>
+								<td>mmaj7</td>
+								<td>∅</td>
+								<td>aug7M</td>
+								<td>m7</td>
+								<td>79b</td>
+								<td>maj7</td>
+								<td>°7</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="section" id="tension-acordes">
+				<h1>Tensión en los acordes</h1>
+
+				<div>
+					Para que una canción termine “bien”, el tema debería terminar en su tónica. Cuando digo “bien” me refiero a que termina con un grado de tranquilidad, que da a entender que la canción terminó.<br>
+					<br>
+					Esto sirve mucho para saber en qué tonalidad está una canción, ya que la mayoría cumple esta “regla”. Es cuestión de fijarse en qué nota termina y listo.<br>
+					<br>
+					La razón es que cada grado de una escala genera una determinada tensión, siendo el 5° grado (“dominante”) el que más tensión genera, y el 1° grado (“tónica”) el que menos.<br>
+					Por ejemplo: Probar la progresión de acordes: C, F, Dm, G =&gt; si no termina en
+					C, da la sensación de que uno se va a morir.
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript">
 			var setHelpers = function() {
@@ -596,7 +702,8 @@
 				$.fn.forEach = function(f) { return this.each(function(_, it) { f(it); }); };
 			};
 
-			var orderSectionsAndIndex = function() {
+			var processSections = function() {
+				//Armar índice y armar jerarquía de títulos:
 				var selector = ".section";
 				var $index = $("#index");
 
@@ -619,15 +726,28 @@
 						return;
 					}
 
-					//Setear título para el título:
+					//Setear título:
 					var prefix = $parents.exists()
-						? $parents.first().children().first().text() + " > "
+						? $parents.first().children().first().text()
+							.replace("...", "").replace(":", "") + " > "
 						: ""; //raices -> hacia -> hojas
 					var postfix = $childs.exists() ? "..." : ":";
-					$title.remove();
-					$(section).prepend(
-						$("<h" + level + "/>", { text: prefix + $title.text() + postfix })
+
+					var $newTitle = $("<h" + level + "/>").append(
+						$("<span/>", { class: "und", text: prefix + $title.text() + postfix })
 					);
+
+					if ($(section).hasClass("guitarpro"))
+						$newTitle.append(
+							$("<span/>", { text: " "}).append(
+								$("<a/>", { href: "gp/" + id + ".gpx" }).append(
+									$("<img/>", { src: "images/gp.png", class: "pick" })
+								)
+							)
+						)
+
+					$title.remove();
+					$(section).prepend($newTitle);
 
 					//Agregar nodo al índice:
 					var $indexItem = $("<li/>").append(
@@ -638,7 +758,6 @@
 					$parentIndex.append($indexItem);
 
 					//Repetir para los hijos:
-					
 					if ($childs.exists()) {
 						var $childsIndex = $("<ul/>");
 						$indexItem.append($("<div/>").append($childsIndex));
@@ -650,6 +769,7 @@
 					return !$(it).parents(selector).exists();
 				});
 				$roots.forEach(processSection);
+				$("body").css("display", "block");
 			};
 
 			var setScrollFatality = function() {
@@ -662,7 +782,7 @@
 			};
 
 			setHelpers();
-			orderSectionsAndIndex();
+			processSections();
 			setScrollFatality();
 		</script>
 	</body>
