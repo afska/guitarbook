@@ -588,7 +588,8 @@
 						La regla es que si la 9° es mayor se puede usar, y si no hay que tener cuidado.<br>
 						<br>
 						<span class="und">Por ejemplo:</span> La novena de un acorde E en la escala mayor de C es su segunda, o sea, F. Hay medio tono de distancia, entonces es 9° bemol => no se puede usar. Su oncena es mayor (porque de G a A hay 1 tono), y su trecena es bemol (porque de B a C hay ½ tono) => solo podemos agregar la 11°.
-
+						<br><br>
+						<img src="images/extensiones.png">
 					</div>
 				</div>
 			</div>
@@ -671,7 +672,7 @@
 					Los acordes que pueden sonar sobre una escala surgen de las reglas de formación de acordes.<br>
 					Como la armonía de una escala se puede transportar a cualquier tónica, en este cuadro se resumen las de las escalas mayor, menor, y menor armónica:<br>
 					<br>
-					<table style="width: 850px; height: 85px;" border="1">
+					<table style="width: 1100px; height: 85px;" border="1">
 						<tbody>
 							<tr>
 								<td class="bol" style="width: 130px">Esc/Gra</td>
@@ -685,22 +686,22 @@
 							</tr>
 							<tr>
 								<td>Mayor</td>
-								<td>maj7 <span class="ita">(9-13)</span></td>
-								<td>m7 <span class="ita">(9-11-13)</span></td>
+								<td>maj7 <span class="ita">(9-13) [6]</span></td>
+								<td>m7 <span class="ita">(9-11-13) [m6]</span></td>
 								<td>m7 <span class="ita">(11)</span></td>
-								<td>maj7 <span class="ita">(9-11-13)</span></td>
+								<td>maj7 <span class="ita">(9-#11-13) [6]</span></td>
 								<td>7 <span class="ita">(9-13)</span></td>
 								<td>m7 <span class="ita">(9-13)</span></td>
-								<td>∅ <span class="ita">(11-13)</span></td>
+								<td>∅ <span class="ita">(13)</span></td>
 							</tr>
 							<tr>
 								<td>Menor</td>
 								<td>m7 <span class="ita">(9-13)</span></td>
-								<td>∅ <span class="ita">(11-13)</span></td>
-								<td>maj7 <span class="ita">(9-13)</span></td>
-								<td>m7 <span class="ita">(9-11-13)</span></td>
+								<td>∅ <span class="ita">(13)</span></td>
+								<td>maj7 <span class="ita">(9-13) [6]</span></td>
+								<td>m7 <span class="ita">(9-11-13) [m6]</span></td>
 								<td>m7 <span class="ita">(11)</span></td>
-								<td>maj7 <span class="ita">(9-11-13)</span></td>
+								<td>maj7 <span class="ita">(9-#11-13) [6]</span></td>
 								<td>7 <span class="ita">(9-13)</span></td>
 							</tr>
 							<tr>
@@ -778,13 +779,12 @@
 
 
 		<div class="section" id="to-do">
-			<h1>// TODO - Pendientes</h1>
+			<h1>//TODO - Pendientes</h1>
 
 			<div>
 				- Intercambio modal. Eso es tocar en modal. Tomás prestados acordes de otras escalas. Si no, es tonal.<br>
 				- La novena y etc son notas de embellecimiento. Me pasó las que se pueden usar en cada grado.<br>
 				- Estoy en la página 103 donde estaba por hablar de los Modos y tonos relacionados.<br>
-				- http://aprendoguitarra.com/data/extensiones.gif
 			</div>
 		</div>
 
@@ -877,7 +877,7 @@
 					var $childs = $(section).children("div" + selector);
 					var level = 2 + $parents.length; //h2 para raíces
 
-					if (level > 6) console.log("ERROR: Hay secciones con demasiados hijos.");
+					if (level > 6) consoleextensiones.log("ERROR: Hay secciones con demasiados hijos.");
 
 					//Obtener datos de la sección:
 					var id = $(section).attr("id");
